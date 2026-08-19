@@ -1,0 +1,10 @@
+Request for Proposal: Enterprise Cloud Migration for GlobalCorp
+
+1. Security Requirements
+GlobalCorp requires all cloud data to be encrypted at rest using AES-256. Furthermore, the vendor must comply with SOC 2 Type II standards and provide annual audit reports. Multi-factor authentication (MFA) is mandatory for all administrative access.
+
+2. Technical Requirements
+The proposed system must guarantee 99.99% uptime. It must support automated failover across at least two geographically distinct regions. The system must provide RESTful APIs for integration with our existing legacy CRM (Salesforce).
+
+3. Pricing Structure
+The vendor must provide a transparent, tiered pricing model based on active user count. The initial contract will be for 3 years. Please detail any setup fees, data migration costs, and the annual maintenance costs for up to 5,000 users.
