@@ -1,0 +1,6 @@
+# Python 3.12; tested together in the development environment.
+crewai==0.130.0
+litellm==1.72.0
+llama-index-core==0.14.25
+llama-index-embeddings-huggingface==0.8.0
+sentence-transformers==6.2.0
