@@ -214,46 +214,7 @@ python main.py --retrieve-only
 python main.py
 ```
 
-For the sample RFP, inspect the evidence and proposal for AES-256,
-SOC 2 Type II, MFA, 99.99% uptime, two regions, Salesforce REST
-integration and commercial terms.
 
-## Validation performed
-
-The development environment passed dependency consistency checks and
-all 11 automated tests.
-
-Real embedding retrieval and real three-agent local inference completed.
-One complete run took approximately 4.7 minutes on CPU.
-
-The model invented two chunk labels; the citation audit detected and
-marked them. Generated drafts still require human review.
-
-Machine runtime does not measure human review-time savings.
-
-## Troubleshooting
-
-- Connection refused: start Ollama and check `--ollama-url`.
-- Missing model: run `ollama pull` for the selected model.
-- Blocked downloads: allow the required Hugging Face/Ollama destinations.
-  Do not disable TLS verification.
-- Read-only home: Ollama requires a writable `~/.ollama` identity directory.
-  `OLLAMA_MODELS` changes model storage only.
-- Slow inference: increase `--timeout` or use suitable hardware.
-- Larger models may improve quality but need more memory.
-
-## Limitations
-
-This is a prototype, not an exhaustive compliance checker.
-
-Top-k retrieval may miss requirements in long RFPs. Similarity scores are
-retrieval scores, not probabilities of correctness.
-
-The project has no vendor capability knowledge base. Generated
-certification, pricing, SLA and implementation claims remain unverified.
-
-Prompt instructions do not guarantee protection against malicious
-document content. Use trusted demonstration documents.
 
 See [the interview guide](docs/INTERVIEW.md) for design explanations,
 demo steps and PoC evaluation guidance.
